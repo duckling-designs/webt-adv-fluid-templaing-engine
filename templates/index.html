@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Meine tolle Seite</title>
+    <title>Hotels on the strip</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<h1>Superseite</h1>
-<p>Hallo ###username###</p>
+<div class="mainContainer">
+    <h1>Hotels at the Las Vegas Strip</h1>
+
+    <div class="allhotels">
+    ###for hotel in hotels###
+        <div class="hotels">
+            <h2>###hotel.name###</h2>
+            <p>###hotel.description###</p>
+        </div>
+    ###endfor###
+    </div>
+</div>
 </body>
 </html>
