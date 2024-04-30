@@ -1,0 +1,80 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #ddeff0;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hotels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  height: 160px;
+  margin: 10px;
+  align-content: flex-start;
+  margin-inside: 3px;
+  background-color: #92cace;
+  border-style: solid;
+  border-color: #3b757f;
+  border-width: 2px;
+  border-radius: 7px;
+}
+
+.allhotels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 60pt;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  flex-direction: row;
+}
+
+button {
+  margin: 10px;
+  background-color: #2d464c;
+  color: white;
+  border-radius: 7px;
+  width: 125px;
+  height: 35px;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+/*# sourceMappingURL=single-column.css.map */

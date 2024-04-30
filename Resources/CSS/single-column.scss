@@ -1,0 +1,90 @@
+$blue-chill-50: #f2f9f9;
+$blue-chill-100: #ddeff0;
+$blue-chill-200: #bfe0e2;
+$blue-chill-300: #92cace;
+$blue-chill-400: #5faab1;
+$blue-chill-500: #438e96;
+$blue-chill-600: #3b757f;
+$blue-chill-700: #356169;
+$blue-chill-800: #325158;
+$blue-chill-900: #2d464c;
+$blue-chill-950: #1a2c32;
+
+$primary-color: $blue-chill-600;
+$secondary-color: $blue-chill-300;
+$tertiary-color: $blue-chill-900;
+$background-color: $blue-chill-100;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+// Styles
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: $background-color;
+}
+
+.mainContainer {
+  @include flex-center;
+}
+
+.hotels {
+  @include flex-center;
+  width: 300px;
+  height: 160px;
+  margin: 10px;
+  align-content: flex-start;
+  margin-inside: 3px;
+  background-color: $secondary-color;
+  border-style: solid;
+  border-color: $primary-color;
+  border-width: 2px;
+  border-radius: 7px;
+}
+
+.allhotels {
+  @include flex-center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 60pt;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+
+.menu {
+  @include flex-center;
+  flex-direction: row;
+}
+
+button {
+  margin: 10px;
+  background-color: $tertiary-color;
+  color: white;
+  border-radius: 7px;
+  width: 125px;
+  height: 35px;
+}
+
+// Responsive Styles for Phones
+@media (max-width: 650px) {
+  h1 {
+    font-size: 40px;
+  }
+}

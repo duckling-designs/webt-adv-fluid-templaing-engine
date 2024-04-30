@@ -1,6 +1,21 @@
-<f:layout name="Default" />
+<f:layout name="SingleColumn" />
 
+<f:section name="Menu">
+    <a href="index.php">
+        <button>Hotel Seite</button>
+    </a>
+    <a href="about.php">
+        <button>Über uns</button>
+    </a>
+</f:section>
+
+<f:comment>Ich bin ein wunderbarer Kommentar</f:comment>
 <f:section name="Main">
-    I am the template belonging to the "Default" controller, action "Default".
-    Value of "foobar": {foobar}.
+    <f:render partial="Hotels" arguments="{hotels: hotels}"></f:render>
+</f:section>
+
+<f:section name="Footer">
+    <f:section name="Footer">
+        <a href="https://github.com/duckling-designs/webt-adv-twig-templating-engine">Github </a>| 2024 Duckling Designs
+    </f:section>
 </f:section>

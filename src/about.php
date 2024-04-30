@@ -19,12 +19,10 @@ $paths->setPartialRootPaths([
     __DIR__ . '/../Resources/Partials/'
 ]);
 
-$hotels = array(
-    new Hotel('Wynn', 'Schön aber teuer, auf jeden Fall fürs Frühstück hin'),
-    new Hotel('Mandalay Bay', 'Ganz oben am Strip, gut und nicht so teuer'),
-    new Hotel('Excalibur', 'Gehen Sie nicht ins Excalibur, ist zum Wohnen nicht so nice angeblich'),
+$aboutText = array(
+    "Hallo das ist ein Test",
 );
 
-$view->assign('hotels', $hotels);
+$view->assign('about', $aboutText);
 
-echo $view->render('Default');
+echo $view->render('About');
