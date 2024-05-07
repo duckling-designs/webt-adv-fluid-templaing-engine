@@ -5,9 +5,19 @@
     <title>Las vegas</title>
     <link rel="stylesheet" href="../Resources/CSS/double-column.css">
 </head>
-<f:render section="Menu" />
-<div class="columns">
-    <f:render section="Left" />
-    <f:render section="Right" />
+<div class="Menu">
+    <f:render section="Menu" />
 </div>
-<f:render section="Footer" />
+<div class="columns">
+    <div class="left-column">
+        <f:render section="Left" />
+    </div>
+
+    <div class="right-column">
+        <f:render section="Right" />
+    </div>
+</div>
+
+<div class="footer">
+    <f:render section="Footer" />
+</div>
